@@ -1,0 +1,95 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace></RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DemoData.vb" />
+    <None Include="DemoData.vb" Visible="false" />
+    <None Update="appsettings.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="appsettings.example.json" CopyToOutputDirectory="Never" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Icon\back.png" />
+    <None Remove="Images\Icon\check.png" />
+    <None Remove="Images\Icon\chevron.png" />
+    <None Remove="Images\Icon\close.png" />
+    <None Remove="Images\Icon\edit.png" />
+    <None Remove="Images\Icon\export.png" />
+    <None Remove="Images\Icon\eye_closed.png" />
+    <None Remove="Images\Icon\eye_open.png" />
+    <None Remove="Images\Icon\forward.png" />
+    <None Remove="Images\Icon\location.png" />
+    <None Remove="Images\Icon\lock.png" />
+    <None Remove="Images\Icon\mail.png" />
+    <None Remove="Images\Icon\phone.png" />
+    <None Remove="Images\Icon\sort_down.png" />
+    <None Remove="Images\Icon\sort_up.png" />
+    <None Remove="Images\Icon\unlock.png" />
+    <None Remove="Images\incorrect.png" />
+    <None Remove="Images\login_bg.png" />
+    <None Remove="Images\Pfp.png" />
+    <None Remove="Images\plp_banner.png" />
+    <None Remove="Images\Seal.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="App.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\incorrect.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Icon\edit.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Import Include="System.Windows" />
+    <Import Include="System.Windows.Controls" />
+    <Import Include="System.Windows.Data" />
+    <Import Include="System.Windows.Documents" />
+    <Import Include="System.Windows.Input" />
+    <Import Include="System.Windows.Media" />
+    <Import Include="System.Windows.Media.Imaging" />
+    <Import Include="System.Windows.Navigation" />
+    <Import Include="System.Windows.Shapes" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySqlConnector" Version="2.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Icon\back.png" />
+    <Resource Include="Images\Icon\check.png" />
+    <Resource Include="Images\Icon\chevron.png" />
+    <Resource Include="Images\Icon\close.png" />
+    <Resource Include="Images\Icon\export.png" />
+    <Resource Include="Images\Icon\eye_closed.png" />
+    <Resource Include="Images\Icon\eye_open.png" />
+    <Resource Include="Images\Icon\forward.png" />
+    <Resource Include="Images\Icon\location.png" />
+    <Resource Include="Images\Icon\lock.png" />
+    <Resource Include="Images\Icon\mail.png" />
+    <Resource Include="Images\Icon\phone.png" />
+    <Resource Include="Images\Icon\sort_down.png" />
+    <Resource Include="Images\Icon\sort_up.png" />
+    <Resource Include="Images\Icon\unlock.png" />
+    <Resource Include="Images\login_bg.png" />
+    <Resource Include="Images\Pfp.png" />
+    <Resource Include="Images\plp_banner.png" />
+    <Resource Include="Images\Seal.png" />
+  </ItemGroup>
+
+</Project>
